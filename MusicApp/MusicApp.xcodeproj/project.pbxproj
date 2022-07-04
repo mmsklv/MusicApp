@@ -13,6 +13,11 @@
 		FA05ED8C2871A757009777AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA05ED8A2871A757009777AF /* Main.storyboard */; };
 		FA05ED8E2871A759009777AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA05ED8D2871A759009777AF /* Assets.xcassets */; };
 		FA05ED912871A759009777AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA05ED8F2871A759009777AF /* LaunchScreen.storyboard */; };
+		FA05ED992871AACC009777AF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05ED982871AACC009777AF /* AppConstants.swift */; };
+		FA05ED9B2871B537009777AF /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05ED9A2871B537009777AF /* UIView + Ext.swift */; };
+		FA05ED9D2871BBBB009777AF /* UIButton + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05ED9C2871BBBB009777AF /* UIButton + Ext.swift */; };
+		FA05ED9F2871C017009777AF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05ED9E2871C017009777AF /* CustomButton.swift */; };
+		FA05EDA12871C1F9009777AF /* CALayer + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05EDA02871C1F9009777AF /* CALayer + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FA05ED8D2871A759009777AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA05ED902871A759009777AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA05ED922871A759009777AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA05ED982871AACC009777AF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		FA05ED9A2871B537009777AF /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		FA05ED9C2871BBBB009777AF /* UIButton + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Ext.swift"; sourceTree = "<group>"; };
+		FA05ED9E2871C017009777AF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FA05EDA02871C1F9009777AF /* CALayer + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				FA05ED842871A757009777AF /* AppDelegate.swift */,
+				FA05ED982871AACC009777AF /* AppConstants.swift */,
 				FA05ED862871A757009777AF /* SceneDelegate.swift */,
 				FA05ED882871A757009777AF /* ViewController.swift */,
+				FA05EDA02871C1F9009777AF /* CALayer + Ext.swift */,
 				FA05ED8A2871A757009777AF /* Main.storyboard */,
+				FA05ED9C2871BBBB009777AF /* UIButton + Ext.swift */,
+				FA05ED9A2871B537009777AF /* UIView + Ext.swift */,
 				FA05ED8D2871A759009777AF /* Assets.xcassets */,
 				FA05ED8F2871A759009777AF /* LaunchScreen.storyboard */,
 				FA05ED922871A759009777AF /* Info.plist */,
+				FA05ED9E2871C017009777AF /* CustomButton.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -141,6 +156,11 @@
 				FA05ED892871A757009777AF /* ViewController.swift in Sources */,
 				FA05ED852871A757009777AF /* AppDelegate.swift in Sources */,
 				FA05ED872871A757009777AF /* SceneDelegate.swift in Sources */,
+				FA05EDA12871C1F9009777AF /* CALayer + Ext.swift in Sources */,
+				FA05ED9D2871BBBB009777AF /* UIButton + Ext.swift in Sources */,
+				FA05ED9F2871C017009777AF /* CustomButton.swift in Sources */,
+				FA05ED992871AACC009777AF /* AppConstants.swift in Sources */,
+				FA05ED9B2871B537009777AF /* UIView + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +313,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +343,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
